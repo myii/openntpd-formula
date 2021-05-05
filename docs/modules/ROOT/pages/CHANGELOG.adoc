@@ -1,0 +1,88 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/openntpd-formula/compare/v0.2.3...v0.2.4++[0.2.4^] (2021-01-14)
+
+=== Bug Fixes
+
+* *_mapdata:* ensure map data is directly under `values`
+(https://github.com/saltstack-formulas/openntpd-formula/commit/90acda9a6697ce569410f383a4244d9b75bab392[90acda9^])
+
+=== Tests
+
+* *_mapdata:* update for `_mapdata/init.sls` change
+(https://github.com/saltstack-formulas/openntpd-formula/commit/3935390361f7ec38c29eec9b2410c4196a2d9cf4[3935390^])
+
+== link:++https://github.com/saltstack-formulas/openntpd-formula/compare/v0.2.2...v0.2.3++[0.2.3^] (2020-12-23)
+
+=== Code Refactoring
+
+* *map:* use top-level `values:` key in `map.jinja` dumps
+(https://github.com/saltstack-formulas/openntpd-formula/commit/264445b3180f9ccea69874858b626101f28f54b6[264445b^])
+
+== link:++https://github.com/saltstack-formulas/openntpd-formula/compare/v0.2.1...v0.2.2++[0.2.2^] (2020-12-22)
+
+=== Continuous Integration
+
+* *commitlint:* ensure `upstream/master` uses main repo URL [skip ci]
+(https://github.com/saltstack-formulas/openntpd-formula/commit/2372d07ba34c8d0eeaf2f53dc056a77e768f64e3[2372d07^])
+* *gitlab-ci:* add `rubocop` linter (with `allow_failure`) [skip ci]
+(https://github.com/saltstack-formulas/openntpd-formula/commit/1e0fbe57992ba7325332621983132e7bee304acc[1e0fbe5^])
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/openntpd-formula/commit/2a686fef9ab853731936cc09527766b2ac1455dc[2a686fe^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/openntpd-formula/commit/b6821311395ed78c6f4106f52973e3d7c7e6e87a[b682131^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/openntpd-formula/commit/a710834c01b24a938015320495c684d62b76e9d2[a710834^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/openntpd-formula/commit/1eed3db0f4b7902d7c29b99a0246f16703e4eea4[1eed3db^])
+
+=== Tests
+
+* *_mapdata:* fix existing verification files
+(https://github.com/saltstack-formulas/openntpd-formula/commit/4f6d73509cd880379befe125d762eaf401756513[4f6d735^])
+* *_mapdata:* generate remaining verification files
+(https://github.com/saltstack-formulas/openntpd-formula/commit/64ae00d2fa97788ff618438ca70977e77dc620b8[64ae00d^])
+* *map:* standardise `map.jinja` verification
+(https://github.com/saltstack-formulas/openntpd-formula/commit/7580eaf0fba3bb57c524cf0b33dbbb1603e8e0d0[7580eaf^])
+
+== link:++https://github.com/saltstack-formulas/openntpd-formula/compare/v0.2.0...v0.2.1++[0.2.1^] (2020-09-10)
+
+=== Bug Fixes
+
+* *state:* restart service when configuration has changed
+(https://github.com/saltstack-formulas/openntpd-formula/commit/9fc8fbda597d4acb603997080643125725d8ef37[9fc8fbd^])
+
+== link:++https://github.com/saltstack-formulas/openntpd-formula/compare/v0.1.2...v0.2.0++[0.2.0^] (2020-08-25)
+
+=== Features
+
+* *map:* sync map.jinja with template-formula
+(https://github.com/saltstack-formulas/openntpd-formula/commit/ed386a83658feac22bdab86c5b5e802b29c30092[ed386a8^])
+
+=== Tests
+
+* *_mapdata:* update for merging from test pillar
+(https://github.com/saltstack-formulas/openntpd-formula/commit/aec6af0054b9b8fffc81c780849d6704461f7dfa[aec6af0^])
+
+== link:++https://github.com/saltstack-formulas/openntpd-formula/compare/v0.1.1...v0.1.2++[0.1.2^] (2020-08-25)
+
+=== Tests
+
+* *map:* verify `map.jinja` dump using `_mapdata` state
+(https://github.com/saltstack-formulas/openntpd-formula/commit/80c4eaa9b083be33790374cc24af5f759809e88b[80c4eaa^])
+
+== link:++https://github.com/saltstack-formulas/openntpd-formula/compare/v0.1.0...v0.1.1++[0.1.1^] (2020-08-14)
+
+=== Bug Fixes
+
+* *salt-lint:* fix all violations
+(https://github.com/saltstack-formulas/openntpd-formula/commit/7135a975d14674eb056e10401f1db461782a3060[7135a97^])
+* *yamllint:* fix violations
+(https://github.com/saltstack-formulas/openntpd-formula/commit/dba380e7ceaa18a56078f656dbe8a619bb5964f9[dba380e^])
+
+=== Continuous Integration
+
+* *kitchen:* add Kitchen tests
+(https://github.com/saltstack-formulas/openntpd-formula/commit/0e4672cf7508847c5a6a20169a320d5d3393e729[0e4672c^])
